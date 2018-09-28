@@ -1,7 +1,7 @@
 // Created by: Julie Nguyen
 // Created on: Sept 2018
 // Created for: ICS4U
-// This program 
+// // This program generates a number between 1 and 6 and the user continues guessing until they guess the number.
 
 import GameplayKit
 
