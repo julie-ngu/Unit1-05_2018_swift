@@ -8,7 +8,6 @@ import Foundation
 print("This is a game that generates a random number between 1 and 6. \n\nGuess what number the computer generated: ")
 
 let randNum = arc4random_uniform(6) + 1
-
 var userTries = 0
     
     repeat {
