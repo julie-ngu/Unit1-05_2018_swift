@@ -3,12 +3,11 @@
 // Created for: ICS4U
 // // This program generates a number between 1 and 6 and the user continues guessing until they guess the number.
 
-import GameplayKit
+import Foundation
 
 print("This is a game that generates a random number between 1 and 6. \n\nGuess what number the computer generated: ")
 
-let randNumGen = GKRandomDistribution(forDieWithSideCount: 6)
-let num = randNumGen.nextInt()
+let randNum = arc4random_uniform(6) + 1
 
 var userTries = 0
     
@@ -19,7 +18,7 @@ var userTries = 0
             print("-1 (error)")
         }
         else if let userGuess = Int(userInput!) {
-            if userGuess == num {
+            if userGuess == randNum {
                 print("Congratulations, you guessed right! It took you \(userTries) try/tries.")
                 exit(0)
             }
